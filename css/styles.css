@@ -26,7 +26,7 @@ li {
 
 .d {
     background-color: #3cb371;
-    /* font-size: 72px; */
+    font-size: 72px; 
 }
 
 .e {
@@ -35,4 +35,21 @@ li {
 
 .f {
     background-color: #9370db;
+}
+
+/* flexblox responds to the content of their natural width first, then distrubutes leftover space on the row*/
+ul.flex {
+    display: flex;
+    justify-content: space-around;
+
+    /*align-items distributes the space on the cross axis, The tallest item defines the height for the whole row*/
+
+    align-items: stretch; /*default propert*/
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+
+    /*shprthand propert can use for both justify-content and align-items*/
+    place-items: baseline center;
 }
